@@ -74,6 +74,7 @@ function getLink(addr) {
 
 function getValue() {
   simpleStorage.get(function(e,r){
+    alert(r.toNumber());
     document.getElementById('storedData').innerHTML=r.toNumber();
 
   });
